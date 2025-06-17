@@ -21,23 +21,24 @@
   <meta name="author" content="Zhao Jingqian">
   <meta name="keywords" content="">
   
-    <meta name="description" content="扩散模型（Diffusion Model）是一种生成模型，近年来在图像生成、音频合成、多模态融合等领域取得了显著的成果。本文将对扩散模型的技术路线进行梳理，包括其在CV领域上的应用、发展历程以及后期在NLP以及多模态领域的扩展，帮助读者更好地理解其工作原理和发展历程。 Coming soon">
+    <meta name="description" content="课题组组会论文分享，上传到博客留存。  论文题目：Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse 录用会议：ICLR 2025 Oral 论文链接：https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2409.11242 简介：LLM 是检">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Diffusion Model 技术路线梳理">
-<meta property="og:url" content="http://zhaojingqian.github.io/2025/06/14/Diffusion-Model-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E6%A2%B3%E7%90%86/index.html">
+<meta property="og:title" content="论文分享（一）">
+<meta property="og:url" content="http://zhaojingqian.github.io/2025/06/17/%E8%AE%BA%E6%96%87%E5%88%86%E4%BA%AB%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Zhao Jingqian&#39;s Blog">
-<meta property="og:description" content="扩散模型（Diffusion Model）是一种生成模型，近年来在图像生成、音频合成、多模态融合等领域取得了显著的成果。本文将对扩散模型的技术路线进行梳理，包括其在CV领域上的应用、发展历程以及后期在NLP以及多模态领域的扩展，帮助读者更好地理解其工作原理和发展历程。 Coming soon">
+<meta property="og:description" content="课题组组会论文分享，上传到博客留存。  论文题目：Measuring and Enhancing Trustworthiness of LLMs in RAG through Grounded Attributions and Learning to Refuse 录用会议：ICLR 2025 Oral 论文链接：https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2409.11242 简介：LLM 是检">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2025-06-14T12:31:51.000Z">
-<meta property="article:modified_time" content="2025-06-15T08:01:21.854Z">
+<meta property="article:published_time" content="2025-06-17T14:26:02.000Z">
+<meta property="article:modified_time" content="2025-06-17T14:40:28.204Z">
 <meta property="article:author" content="Zhao Jingqian">
 <meta property="article:tag" content="论文">
-<meta property="article:tag" content="扩散模型">
+<meta property="article:tag" content="分享">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>Diffusion Model 技术路线梳理 - Zhao Jingqian&#39;s Blog</title>
+  <title>论文分享（一） - Zhao Jingqian&#39;s Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -203,7 +204,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Diffusion Model 技术路线梳理"></span>
+            <span id="subtitle" data-typed-text="论文分享（一）"></span>
           
         </div>
 
@@ -214,8 +215,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-06-14 20:31" pubdate>
-          2025年6月14日 晚上
+        <time datetime="2025-06-17 22:26" pubdate>
+          2025年6月17日 晚上
         </time>
       </span>
     
@@ -226,7 +227,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          108 字
+          337 字
         
       </span>
     
@@ -237,7 +238,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -274,14 +275,35 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Diffusion Model 技术路线梳理</h1>
+            <h1 id="seo-header">论文分享（一）</h1>
             
             
               <div class="markdown-body">
                 
-                <p>扩散模型（Diffusion
-Model）是一种生成模型，近年来在图像生成、音频合成、多模态融合等领域取得了显著的成果。本文将对扩散模型的技术路线进行梳理，包括其在CV领域上的应用、发展历程以及后期在NLP以及多模态领域的扩展，帮助读者更好地理解其工作原理和发展历程。</p>
-<p>Coming soon</p>
+                <p>课题组组会论文分享，上传到博客留存。</p>
+<hr />
+<p>论文题目：Measuring and Enhancing Trustworthiness of LLMs in RAG
+through Grounded Attributions and Learning to Refuse</p>
+<p>录用会议：ICLR 2025 Oral</p>
+<p>论文链接：<a
+target="_blank" rel="noopener" href="https://arxiv.org/abs/2409.11242">https://arxiv.org/abs/2409.11242</a></p>
+<p>简介：LLM 是检索增强生成 (RAG)
+系统不可或缺的组成部分。尽管许多研究侧重于评估端到端 RAG
+系统的整体质量，但在理解 LLM 是否适用于 RAG
+任务方面仍存在差距。为了解决这个问题，我们引入了
+Trust-Score，这是一个用于评估 LLM 在 RAG
+框架内可信度的整体指标。我们的结果表明，各种提示方法（例如情境学习）都无法有效地使
+LLM 适应 Trust-Score 所衡量的 RAG 任务。因此，我们提出了 Trust-Align
+方法，这是一种对齐 LLM 以提高 Trust-Score 性能的方法。在 27 个使用
+Trust-Align 对齐的模型中，有 26 个在 ASQA、QAMPARI 和 ELI5
+上的表现显著优于竞争基线。具体来说，在LLaMA-3-8b数据集中，Trust-Align在ASQA（提升12.56）、QAMPARI（提升36.04）和ELI5（提升17.69）上的表现均优于FRONT。Trust-Align还显著提升了模型正确拒绝引用和提供高质量引用的能力。我们还展示了Trust-Align在不同开放权重模型中的有效性，包括LLaMA系列（1b到8b）、Qwen-2.5系列（0.5b到7b）和Phi3.5（3.8b）。</p>
+<hr />
+<iframe src="https://1drv.ms/p/c/e80c8afed738e3f8/IQTgnvME_YgQQJFr49hf0og2AdaJSLBbtULj52WVvS3f0_o?wdAr=1.7777777777777777" width="900px" height="545px" frameborder="0">
+This is an embedded
+<a target="_blank" href="https://office.com">Microsoft Office</a>
+presentation, powered by
+<a target="_blank" href="https://office.com/webapps">Office</a>.
+</iframe>
 
                 
               </div>
@@ -300,7 +322,7 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
     
       <span class="category-chain">
         
-  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  <a href="/categories/%E8%AE%BA%E6%96%87/" class="category-chain-item">论文</a>
   
   
 
@@ -317,7 +339,9 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
       
         <a href="/tags/%E8%AE%BA%E6%96%87/" class="print-no-link">#论文</a>
       
-        <a href="/tags/%E6%89%A9%E6%95%A3%E6%A8%A1%E5%9E%8B/" class="print-no-link">#扩散模型</a>
+        <a href="/tags/%E5%88%86%E4%BA%AB/" class="print-no-link">#分享</a>
+      
+        <a href="/tags/%E5%AD%A6%E4%B9%A0/" class="print-no-link">#学习</a>
       
     </div>
   
@@ -329,8 +353,8 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Diffusion Model 技术路线梳理</div>
-      <div>http://zhaojingqian.github.io/2025/06/14/Diffusion-Model-技术路线梳理/</div>
+      <div>论文分享（一）</div>
+      <div>http://zhaojingqian.github.io/2025/06/17/论文分享（一）/</div>
     </div>
     <div class="license-meta">
       
@@ -342,7 +366,7 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2025年6月14日</div>
+          <div>2025年6月17日</div>
         </div>
       
       
@@ -374,18 +398,12 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/06/14/Awosome-Reinforce-Learning/" title="Awosome Reinforce Learning">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Awosome Reinforce Learning</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/05/25/ACL2025%E4%B8%BB%E4%BC%9A%E4%B8%AD%E7%A8%BF/" title="ACL2025主会中稿">
-                        <span class="hidden-mobile">ACL2025主会中稿</span>
+                      <a href="/2025/06/15/Leetcode-%E5%91%A8%E8%B5%9B454/" title="Leetcode 周赛454">
+                        <span class="hidden-mobile">Leetcode 周赛454</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -442,12 +460,6 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
 
 
   
-
-
-  
-  
-
-
 
 
 
@@ -640,49 +652,6 @@ Model）是一种生成模型，近年来在图像生成、音频合成、多模
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="/js/local-search.js" ></script>
 
