@@ -91,7 +91,7 @@
     <link href="/2025/06/14/Diffusion-Model-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E6%A2%B3%E7%90%86/"/>
     <url>/2025/06/14/Diffusion-Model-%E6%8A%80%E6%9C%AF%E8%B7%AF%E7%BA%BF%E6%A2%B3%E7%90%86/</url>
     
-    <content type="html"><![CDATA[<p>扩散模型（DiffusionModel）是一种生成模型，近年来在图像生成、音频合成、多模态融合等领域取得了显著的成果。本文将对扩散模型的技术路线进行梳理，包括其在CV领域上的应用、发展历程以及后期在NLP以及多模态领域的扩展，帮助读者更好地理解其工作原理和发展历程。</p><p>时间原因，先把PPT奉上，后续会出文字博客～</p><hr /><div class="responsive-iframe-container"><p><iframe src="https://1drv.ms/p/c/e80c8afed738e3f8/IQQwYPegQyvFQYMiFHUIXcomAYGF190ilavEShCez17W0EE?wdAr=1.7777777777777777"></iframe></p></div>]]></content>
+    <content type="html"><![CDATA[<p>扩散模型（DiffusionModel）是一种生成模型，近年来在图像生成、音频合成、多模态融合等领域取得了显著的成果。本文将对扩散模型的技术路线进行梳理，包括其在CV领域上的应用、发展历程以及后期在NLP以及多模态领域的扩展，帮助读者更好地理解其工作原理和发展历程。</p><p>时间原因，先把PPT奉上，后续会出文字博客～</p><hr /><div class="responsive-iframe-container"><p><iframe     src="https://1drv.ms/p/c/e80c8afed738e3f8/IQQwYPegQyvFQYMiFHUIXcomAYGF190ilavEShCez17W0EE?wdAr=1.7777777777777777&amp;em=2&amp;wdbipreview=true"     loading="lazy"    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"    allowfullscreen> </iframe></p></div>]]></content>
     
     
     <categories>
