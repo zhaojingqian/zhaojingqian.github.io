@@ -8,7 +8,7 @@
     <link href="/2025/06/17/%E8%AE%BA%E6%96%87%E5%88%86%E4%BA%AB%EF%BC%88%E4%B8%80%EF%BC%89/"/>
     <url>/2025/06/17/%E8%AE%BA%E6%96%87%E5%88%86%E4%BA%AB%EF%BC%88%E4%B8%80%EF%BC%89/</url>
     
-    <content type="html"><![CDATA[<p>课题组组会论文分享，上传到博客留存。</p><hr /><p>论文题目：Measuring and Enhancing Trustworthiness of LLMs in RAGthrough Grounded Attributions and Learning to Refuse</p><p>录用会议：ICLR 2025 Oral</p><p>论文链接：<ahref="https://arxiv.org/abs/2409.11242">https://arxiv.org/abs/2409.11242</a></p><p>简介：LLM 是检索增强生成 (RAG)系统不可或缺的组成部分。尽管许多研究侧重于评估端到端 RAG系统的整体质量，但在理解 LLM 是否适用于 RAG任务方面仍存在差距。为了解决这个问题，我们引入了Trust-Score，这是一个用于评估 LLM 在 RAG框架内可信度的整体指标。我们的结果表明，各种提示方法（例如情境学习）都无法有效地使LLM 适应 Trust-Score 所衡量的 RAG 任务。因此，我们提出了 Trust-Align方法，这是一种对齐 LLM 以提高 Trust-Score 性能的方法。在 27 个使用Trust-Align 对齐的模型中，有 26 个在 ASQA、QAMPARI 和 ELI5上的表现显著优于竞争基线。具体来说，在LLaMA-3-8b数据集中，Trust-Align在ASQA（提升12.56）、QAMPARI（提升36.04）和ELI5（提升17.69）上的表现均优于FRONT。Trust-Align还显著提升了模型正确拒绝引用和提供高质量引用的能力。我们还展示了Trust-Align在不同开放权重模型中的有效性，包括LLaMA系列（1b到8b）、Qwen-2.5系列（0.5b到7b）和Phi3.5（3.8b）。</p><hr /><div class="responsive-iframe-container"><p><iframe src="https://1drv.ms/p/c/e80c8afed738e3f8/IQTgnvME_YgQQJFr49hf0og2AdaJSLBbtULj52WVvS3f0_o?wdAr=1.7777777777777777"></iframe></p></div>]]></content>
+    <content type="html"><![CDATA[<p>课题组组会论文分享，上传到博客留存。</p><hr /><p>论文题目：Measuring and Enhancing Trustworthiness of LLMs in RAGthrough Grounded Attributions and Learning to Refuse</p><p>录用会议：ICLR 2025 Oral</p><p>论文链接：<ahref="https://arxiv.org/abs/2409.11242">https://arxiv.org/abs/2409.11242</a></p><p>简介：LLM 是检索增强生成 (RAG)系统不可或缺的组成部分。尽管许多研究侧重于评估端到端 RAG系统的整体质量，但在理解 LLM 是否适用于 RAG任务方面仍存在差距。为了解决这个问题，我们引入了Trust-Score，这是一个用于评估 LLM 在 RAG框架内可信度的整体指标。我们的结果表明，各种提示方法（例如情境学习）都无法有效地使LLM 适应 Trust-Score 所衡量的 RAG 任务。因此，我们提出了 Trust-Align方法，这是一种对齐 LLM 以提高 Trust-Score 性能的方法。在 27 个使用Trust-Align 对齐的模型中，有 26 个在 ASQA、QAMPARI 和 ELI5上的表现显著优于竞争基线。具体来说，在LLaMA-3-8b数据集中，Trust-Align在ASQA（提升12.56）、QAMPARI（提升36.04）和ELI5（提升17.69）上的表现均优于FRONT。Trust-Align还显著提升了模型正确拒绝引用和提供高质量引用的能力。我们还展示了Trust-Align在不同开放权重模型中的有效性，包括LLaMA系列（1b到8b）、Qwen-2.5系列（0.5b到7b）和Phi3.5（3.8b）。</p><hr /><!-- <div class="responsive-iframe-container">  <iframe src="https://1drv.ms/p/c/e80c8afed738e3f8/IQTgnvME_YgQQJFr49hf0og2AdaJSLBbtULj52WVvS3f0_o?wdAr=1.7777777777777777"></iframe></div> --><div class="responsive-iframe-container"><p><iframe     src="https://1drv.ms/p/c/e80c8afed738e3f8/IQTgnvME_YgQQJFr49hf0og2AdaJSLBbtULj52WVvS3f0_o?wdAr=1.7777777777777777&amp;em=2&amp;wdbipreview=true"     frameborder="0"    allowfullscreen="true"    loading="lazy"> This is an embedded<a target="_blank" href="https://office.com">Microsoft Office</a>presentation, powered by<a target="_blank" href="https://office.com/webapps">Office</a>.</iframe></p></div>]]></content>
     
     
     <categories>
@@ -76,9 +76,9 @@
     
     <tags>
       
-      <tag>强化学习</tag>
-      
       <tag>论文</tag>
+      
+      <tag>强化学习</tag>
       
     </tags>
     
@@ -130,9 +130,9 @@
     
     <tags>
       
-      <tag>论文</tag>
-      
       <tag>宣传</tag>
+      
+      <tag>论文</tag>
       
     </tags>
     
