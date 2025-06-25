@@ -1,17 +1,33 @@
-
 .responsive-iframe-container {
   position: relative;
+  overflow: hidden;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  padding-top: 60.56%; /* 保持原始宽高比 476:288 */
+  margin: 20px 0;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .responsive-iframe-container iframe {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
   height: 100%;
   border: none;
+}
+
+/* 移动端优化 */
+@media screen and (max-width: 768px) {
+  .responsive-iframe-container {
+    padding-top: 75%; /* 调整移动端比例 */
+    margin: 15px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-iframe-container {
+    padding-top: 85%; /* 小屏幕进一步调整 */
+    margin: 10px 0;
+  }
 }
