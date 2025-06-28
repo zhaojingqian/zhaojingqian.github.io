@@ -17,35 +17,13 @@
   border: none;
 }
 
-/* 移动端备用显示 */
+/* 默认隐藏移动端备用显示 */
 .mobile-fallback {
-  display: none !important;
+  display: none;
   text-align: center;
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ddd;
-}
-
-/* PC端显示iframe，隐藏fallback */
-@media (min-width: 769px) {
-  .responsive-iframe-container {
-    display: block !important;
-  }
-  
-  .mobile-fallback {
-    display: none !important;
-  }
-}
-
-/* 移动端隐藏iframe，显示fallback */
-@media (max-width: 768px) {
-  .responsive-iframe-container {
-    display: none !important;
-  }
-  
-  .mobile-fallback {
-    display: block !important;
-  }
 }
 
 /* ========== 学术风格增强（完全兼容Fluid主题） ========== */
@@ -151,8 +129,30 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* 响应式设计 */
+/* ========== 响应式设计 ========== */
+/* PC端样式 - 769px及以上，确保不显示fallback */
+@media (min-width: 769px) {
+  .responsive-iframe-container {
+    display: block !important;
+  }
+  
+  .mobile-fallback {
+    display: none !important;
+  }
+}
+
+/* 移动端样式 - 768px及以下 */
 @media (max-width: 768px) {
+  /* iframe相关 */
+  .responsive-iframe-container {
+    display: none !important;
+  }
+  
+  .mobile-fallback {
+    display: block !important;
+  }
+  
+  /* 其他响应式样式 */
   .post-content h2 {
     font-size: 1.5em;
   }
