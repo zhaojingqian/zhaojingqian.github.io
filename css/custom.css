@@ -17,6 +17,25 @@
   border: none;
 }
 
+/* 移动端修复 */
+.mobile-fallback {
+  display: none;
+  text-align: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+  .responsive-iframe-container {
+    display: none;
+  }
+  
+  .mobile-fallback {
+    display: block;
+  }
+}
+
 /* ========== 学术风格增强（完全兼容Fluid主题） ========== */
 
 /* 改善About页面的排版 */
