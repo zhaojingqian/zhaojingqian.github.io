@@ -17,22 +17,34 @@
   border: none;
 }
 
-/* 移动端修复 */
+/* 移动端备用显示 */
 .mobile-fallback {
-  display: none;
+  display: none !important;
   text-align: center;
   margin: 20px 0;
   padding: 20px;
   border: 1px solid #ddd;
 }
 
-@media (max-width: 768px) {
+/* PC端显示iframe，隐藏fallback */
+@media (min-width: 769px) {
   .responsive-iframe-container {
-    display: none;
+    display: block !important;
   }
   
   .mobile-fallback {
-    display: block;
+    display: none !important;
+  }
+}
+
+/* 移动端隐藏iframe，显示fallback */
+@media (max-width: 768px) {
+  .responsive-iframe-container {
+    display: none !important;
+  }
+  
+  .mobile-fallback {
+    display: block !important;
   }
 }
 
