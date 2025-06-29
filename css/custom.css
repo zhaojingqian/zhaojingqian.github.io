@@ -17,6 +17,48 @@
   border: none;
 }
 
+/* ========== PDF专用容器样式 ========== */
+.pdf-iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 141.42%; /* A4 纸张比例 1:√2 ≈ 1:1.414 */
+  border: none;
+  margin: 20px 0;
+}
+
+.pdf-iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* 宽屏PDF容器样式（适用于横向PDF或海报） */
+.pdf-landscape-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 70.71%; /* 1.414:1 横向A4比例 */
+  border: none;
+  margin: 20px 0;
+}
+
+.pdf-landscape-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
 /* 默认隐藏移动端备用显示 */
 .mobile-fallback {
   display: none;
@@ -132,7 +174,9 @@
 /* ========== 响应式设计 ========== */
 /* PC端样式 - 769px及以上，确保不显示fallback */
 @media (min-width: 769px) {
-  .responsive-iframe-container {
+  .responsive-iframe-container,
+  .pdf-iframe-container,
+  .pdf-landscape-container {
     display: block !important;
   }
   
@@ -143,13 +187,22 @@
 
 /* 移动端样式 - 768px及以下 */
 @media (max-width: 768px) {
-  /* iframe相关 */
+  /* iframe相关 - 隐藏所有iframe容器，显示fallback */
   .responsive-iframe-container {
     display: none !important;
   }
   
   .mobile-fallback {
     display: block !important;
+  }
+  
+  /* 但如果需要在移动端显示PDF，可以使用简化的全宽样式 */
+  .pdf-mobile-friendly {
+    width: 100% !important;
+    height: 500px !important;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 15px 0;
   }
   
   /* 其他响应式样式 */
@@ -189,5 +242,15 @@
   .post-content blockquote {
     background-color: #2d2d2d;
     color: #e0e0e0;
+  }
+  
+  /* PDF容器暗色主题样式 */
+  .pdf-iframe-container,
+  .pdf-landscape-container {
+    border-color: #555;
+  }
+  
+  .pdf-mobile-friendly {
+    border-color: #555;
   }
 }
