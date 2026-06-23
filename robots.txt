@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://zhaojingqian.top/sitemap.xml

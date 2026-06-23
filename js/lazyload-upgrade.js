@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){const e=document.querySelectorAll("img[lazyload]");e.forEach(e=>{e.setAttribute("loading","lazy");e.removeAttribute("lazyload")});const t=document.querySelectorAll("img[data-lcp]");t.forEach(e=>{const t=document.createElement("link");t.rel="preload";t.as="image";t.href=e.dataset.src||e.src;document.head.appendChild(t)})});
